@@ -155,7 +155,7 @@
     pirates "^4.0.0"
     source-map-support "^0.5.16"
 
-"@babel/runtime@^7.8.0", "@babel/runtime@^7.8.4", "@babel/runtime@^7.9.2":
+"@babel/runtime@^7.8.0", "@babel/runtime@^7.9.2":
   version "7.9.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.9.2.tgz#d90df0583a3a252f09aaa619665367bae518db06"
   integrity sha512-NE2DtOdufG7R5vnfQUTehdTfNycfUANEtCa9PssN9O/xmTzP4E08UI797ixaei6hBEVL9BI/PsdJS5x7mWoB9Q==
@@ -195,89 +195,85 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@laminar/api@^0.2.0-beta.37":
-  version "0.2.0-beta.40"
-  resolved "https://registry.yarnpkg.com/@laminar/api/-/api-0.2.0-beta.40.tgz#e75f9b4de9833973781efe45643b8cc53f0af90e"
-  integrity sha512-ja7+l0MVzlpNcgmzP5mNJCbwgMvMvUN6m0o8c4TfPMkVQSxZkP10vZgaWQcG6cG6M3/6TZzh5cfYZMu/CKpFWA==
+"@laminar/api@^0.2.0-beta.73":
+  version "0.2.0-beta.73"
+  resolved "https://registry.yarnpkg.com/@laminar/api/-/api-0.2.0-beta.73.tgz#ede50073eb1a9a0496c4e41d389b654a4f08458a"
+  integrity sha512-7s1bY649ofkP64MCe4xNhDnCUd/zRmm5Cd54Lv4viNuCzg/l7KSepL4HQV1BA27b3hBCZKdpNd4KWWd7mqCZXQ==
   dependencies:
     "@babel/runtime" "^7.8.0"
-    "@laminar/types" "^0.2.0-beta.40"
-    "@orml/api-derive" "^0.2.0-beta.63"
-    "@polkadot/api" "^1.9.0-beta.22"
-    flow-protocol-ethereum "github:laminar-protocol/flow-protocol-ethereum#0.0.2"
+    "@laminar/flow-protocol-ethereum" "0.0.7"
+    "@laminar/types" "^0.2.0-beta.73"
+    "@open-web3/orml-api-derive" "^0.3.0-beta.4"
+    "@polkadot/api" "^1.13.1"
+    rxjs "^6.5.5"
     web3 "1.2.6"
     web3-core "1.2.6"
     web3-eth-contract "1.2.6"
     web3-utils "1.2.6"
 
-"@laminar/types@^0.2.0-beta.40":
-  version "0.2.0-beta.40"
-  resolved "https://registry.yarnpkg.com/@laminar/types/-/types-0.2.0-beta.40.tgz#43bc8ab63680100107342ab06de8044f4ac26a0f"
-  integrity sha512-q6/8+jAjxHKi0hETDq7/+1lT5IW6t2noCzi05ipH90HUe3yjvvP0QRIYs1MS2W6yRcEgo1ZkDP2/SJ/Ajj6cfA==
+"@laminar/flow-protocol-ethereum@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@laminar/flow-protocol-ethereum/-/flow-protocol-ethereum-0.0.7.tgz#aac0c3045b3d2c77e7240a0ead0981c714d91e79"
+  integrity sha512-L80SOVjYUlCYzSqiGIwa0N3hqkSMf7gba2XQjDgPv/I7F9coUe+O9+J1RJ7q9jFAdA/GiTgyfZZqS6MHG5nk/A==
+
+"@laminar/types@^0.2.0-beta.73":
+  version "0.2.0-beta.73"
+  resolved "https://registry.yarnpkg.com/@laminar/types/-/types-0.2.0-beta.73.tgz#14b2cd98811a5b676d7a217a4bad0c23b4aeb538"
+  integrity sha512-CdrkmYsMGBpn6LEgta0prNxkXUQd73ACWh4bb5eDqtg95ElkWwnXk9AqBLjJjQWvsJjixoBkDlkbHUVPpN4lgA==
   dependencies:
     "@babel/runtime" "^7.8.0"
-    "@orml/types" "^0.2.0-beta.63"
-    "@polkadot/typegen" "^1.9.0-beta.22"
-    "@polkadot/types" "^1.9.0-beta.22"
+    "@open-web3/orml-types" "^0.3.0-beta.6"
+    "@polkadot/typegen" "^1.13.1"
+    "@polkadot/types" "^1.13.1"
 
-"@orml/api-derive@^0.2.0-beta.63":
-  version "0.2.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@orml/api-derive/-/api-derive-0.2.0-beta.69.tgz#a1d8aee5cfbd9049809a0ab734d2df25619500b5"
-  integrity sha512-vEtXitY+5knh+BFX68VaJPV8DWWiobwE3j6HVNxjykeUGsApC0lZwcvdGlnoDI7T77XSmcr4QypQ9IPsCWgR0w==
+"@open-web3/api@^0.3.0-beta.5":
+  version "0.3.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@open-web3/api/-/api-0.3.0-beta.6.tgz#2a1a468c12e9ba49ec50dd3d3c99c4b3c7919359"
+  integrity sha512-0uTRdZWG2n3ttvmNKMWVsfEWRJ9aXns+VLty55O8oV9N1tqyhIE94OBocffSsEWp6Dnk/Af2bk6zwhClxitSEQ==
   dependencies:
-    "@polkadot/api" "^1.9.0-beta.22"
+    "@open-web3/util" "^0.3.0-beta.6"
+
+"@open-web3/app-util@^0.3.0-beta.5":
+  version "0.3.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@open-web3/app-util/-/app-util-0.3.0-beta.6.tgz#dfbfd53299a14296ea5a64d6f01554cd6a3e23fe"
+  integrity sha512-9ttkWl/ZY3bc0N5XuPgT3PH4WDTVt00WRWjUh+pxUFbyBxyb1EjqgfSdBNCVeQDVS2Efbhrwwn+Is1/2EEpRQQ==
+  dependencies:
+    "@open-web3/util" "^0.3.0-beta.6"
+    rxjs "^6.5.5"
+
+"@open-web3/dispatcher@^0.3.0-beta.5":
+  version "0.3.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@open-web3/dispatcher/-/dispatcher-0.3.0-beta.6.tgz#1bdfddc8f7e030cd8f8b63946eb7d8bc792237e6"
+  integrity sha512-SQ8OaRfwAHSp1cqBi8s88f9T2GrfLCsUapoFvSI2FHY9KML6F8IGgG22ckVVx2hFLCtKbgJfoaDBGGyBYCEw8A==
+  dependencies:
+    "@open-web3/util" "^0.3.0-beta.6"
+
+"@open-web3/fetcher@^0.3.0-beta.5":
+  version "0.3.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@open-web3/fetcher/-/fetcher-0.3.0-beta.6.tgz#9a477450d87bcf69525b560e3c19f87690ed462c"
+  integrity sha512-XcAuyp6ZbPkwV44JNdqPF504blv0chgNCVTUT9dhjSw5idx3NiYu5cwtcKQIeeCJPGoR9neYIa5Ng3HjX3snDg==
+  dependencies:
+    "@open-web3/util" "^0.3.0-beta.6"
+    axios "^0.19.2"
+    ccxt "^1.26.3"
+
+"@open-web3/orml-api-derive@^0.3.0-beta.4":
+  version "0.3.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@open-web3/orml-api-derive/-/orml-api-derive-0.3.0-beta.6.tgz#81fc03ac77025663c2a6d2a184134d1ddfd2c22f"
+  integrity sha512-ljMJKg1u3K9KX6l8aAnnUSA/z8Lfx+ZkyQ7DA8/P16i33n3/eF5bvINQ4mqIqz4Z8HybWmGTK5c9LhHvxA6HFg==
+  dependencies:
     memoizee "^0.4.14"
 
-"@orml/api@^0.2.0-beta.68":
-  version "0.2.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@orml/api/-/api-0.2.0-beta.69.tgz#0d5469cb61484001f73c89944db5079a361c7e20"
-  integrity sha512-sqM+GQedNnXUm0VzfKdU9a4xLF/v1UT2QmEBlMu58AoESADhynSZb7Bpb9ViLk2WzafYPS11x+z6GklBvve6uQ==
-  dependencies:
-    "@babel/runtime" "^7.8.4"
-    "@orml/util" "^0.2.0-beta.69"
-    "@polkadot/api" "^1.9.0-beta.22"
+"@open-web3/orml-types@^0.3.0-beta.6":
+  version "0.3.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@open-web3/orml-types/-/orml-types-0.3.0-beta.6.tgz#8f7727ce4a650869c149831d3bf60863ca6b597a"
+  integrity sha512-FCmbnBgbG5bvnqACnBFGhoNTXeCkumXiKDNoPYg7w35NB368bpWHkDNzfY4Xxtnpp6OTZm8+HCVZfyWoqvxH8Q==
 
-"@orml/app-util@^0.2.0-beta.68":
-  version "0.2.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@orml/app-util/-/app-util-0.2.0-beta.69.tgz#2ece8e620c08f12f1d6698a19ff2c9df204d2698"
-  integrity sha512-d6dKnLKGjWmOjhwM5nh/Ss9PijWbrzG54Nd6MU7vnGNGKLXBTjc5/5HQ/vvXYccosZf0P8MiPQtR5HNTeqwvLw==
+"@open-web3/util@^0.3.0-beta.5", "@open-web3/util@^0.3.0-beta.6":
+  version "0.3.0-beta.6"
+  resolved "https://registry.yarnpkg.com/@open-web3/util/-/util-0.3.0-beta.6.tgz#88009f093172b4af41cdc7ec30495c89490b6e18"
+  integrity sha512-i2kR2InBFmSwkpCilX3W7yEu9bgIsWYybFZa0oBXBRNaBWKmTVuwCcUEsznpOI7fB4p/wGsFyeRQWqK/TitcoQ==
   dependencies:
-    "@babel/runtime" "^7.8.4"
-    "@orml/util" "^0.2.0-beta.69"
-    rxjs "^6.5.4"
-
-"@orml/dispatcher@^0.2.0-beta.68":
-  version "0.2.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@orml/dispatcher/-/dispatcher-0.2.0-beta.69.tgz#1345558718ca20b2aafb0fffc8219962904b644d"
-  integrity sha512-M9DWNJtO9rbghuOVJVyVD7wWtGRHqd8X3ddx1+0fo+hKopJl4Qwv3foeqPmwUUXKCdghRu/KTKwzxpM2lqM7tg==
-  dependencies:
-    "@babel/runtime" "^7.8.4"
-    "@orml/util" "^0.2.0-beta.69"
-
-"@orml/fetcher@^0.2.0-beta.68":
-  version "0.2.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@orml/fetcher/-/fetcher-0.2.0-beta.69.tgz#263232c53c7aae443f44779768863509ae47ab57"
-  integrity sha512-VbdkCxbF8QXzIRfK4WtaWZZ3SfBw3rnKO6qzmnGgUfoNwCkouWfFKKbT+QNtY1M2s0qW6E/Ephw4Oj1OM5T7nA==
-  dependencies:
-    "@babel/runtime" "^7.8.4"
-    "@orml/util" "^0.2.0-beta.69"
-    axios "^0.19.2"
-
-"@orml/types@^0.2.0-beta.63":
-  version "0.2.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@orml/types/-/types-0.2.0-beta.69.tgz#b1b9e5e550858d72d7f6478c02f0380dd42eb68e"
-  integrity sha512-26eOR4Sb62KBwP0INZgeYZPHqrVv9qQ0grHb0A4UBppg7eemlutLm+6pCBbz8hlU8Gr+dvdn5GLSbW2kq4MPig==
-  dependencies:
-    "@babel/runtime" "^7.8.4"
-    "@polkadot/typegen" "^1.9.0-beta.22"
-
-"@orml/util@^0.2.0-beta.68", "@orml/util@^0.2.0-beta.69":
-  version "0.2.0-beta.69"
-  resolved "https://registry.yarnpkg.com/@orml/util/-/util-0.2.0-beta.69.tgz#e18ff99cd4ace8842e043b7ef6b2d0b350f8fef6"
-  integrity sha512-4iFKTRRJNxzpEDx19i1xxW9fIvJft1h7bH+Hpljubs3SNw1IACbysJEnHwQ6WP7nwjXWrvGpertSutGbQ6uPMA==
-  dependencies:
-    "@babel/runtime" "^7.8.4"
-    "@types/big.js" "^4.0.5"
     "@yarnpkg/lockfile" "^1.1.0"
     big.js "^5.2.2"
 
@@ -297,7 +293,7 @@
     memoizee "^0.4.14"
     rxjs "^6.5.4"
 
-"@polkadot/api@1.9.1", "@polkadot/api@^1.9.0-beta.22", "@polkadot/api@^1.9.0-beta.26":
+"@polkadot/api@1.9.1", "@polkadot/api@^1.13.1", "@polkadot/api@^1.9.0-beta.26":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@polkadot/api/-/api-1.9.1.tgz#10956c3c07bf6ba132f94722bd4bc23d536a7296"
   integrity sha512-dJlWvpilZCVdRgZ2HsG6fwkNGuHomfqHfjMMPPz1yLdnMybWpsWYxK5cYfYZ3Y9EI0KSv0W+ZU0o6LnQyE/lAA==
@@ -365,7 +361,7 @@
     isomorphic-fetch "^2.2.1"
     websocket "^1.0.31"
 
-"@polkadot/typegen@^1.9.0-beta.22", "@polkadot/typegen@^1.9.0-beta.26":
+"@polkadot/typegen@^1.13.1", "@polkadot/typegen@^1.9.0-beta.26":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@polkadot/typegen/-/typegen-1.9.1.tgz#bbfb0aa6e7af11c2c0ba11bd5d8daa887f67f536"
   integrity sha512-aQnBeJcLY+sUc/iq4qk5qH/mhzh+AZYWmLKCbxQylH/UW+KRtG47T0tMfhZWTkG0ORuNzj0aieUONqbDGnRADQ==
@@ -391,7 +387,7 @@
     "@polkadot/util" "^2.7.1"
     bn.js "^5.1.1"
 
-"@polkadot/types@1.9.1", "@polkadot/types@^1.9.0-beta.22", "@polkadot/types@^1.9.0-beta.26":
+"@polkadot/types@1.9.1", "@polkadot/types@^1.13.1", "@polkadot/types@^1.9.0-beta.26":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@polkadot/types/-/types-1.9.1.tgz#88d426241ace9e6ec3a2ce3e1a51d8333ad28822"
   integrity sha512-c1mzuxJiOPIWrkEWMRdT2seW21lEC3C+EetshgCMXpcsAv5iQeB59J1fTbRiSsQIESKIiP/zv+Igpj7wO/2hMw==
@@ -466,11 +462,6 @@
   integrity sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
   dependencies:
     defer-to-connect "^1.0.1"
-
-"@types/big.js@^4.0.5":
-  version "4.0.5"
-  resolved "https://registry.yarnpkg.com/@types/big.js/-/big.js-4.0.5.tgz#62c61697646269e39191f24e55e8272f05f21fc0"
-  integrity sha512-D9KFrAt05FDSqLo7PU9TDHfDgkarlwdkuwFsg7Zm4xl62tTNaz+zN+Tkcdx2wGLBbSMf8BnoMhOVeUGUaJfLKg==
 
 "@types/bn.js@^4.11.3", "@types/bn.js@^4.11.4", "@types/bn.js@^4.11.6":
   version "4.11.6"
@@ -929,6 +920,11 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
   integrity sha1-G2gcIf+EAzyCZUMJBolCDRhxUdw=
+
+ccxt@^1.26.3:
+  version "1.27.54"
+  resolved "https://registry.yarnpkg.com/ccxt/-/ccxt-1.27.54.tgz#7117aa824b764958dd19dc494cbe81a47d3df421"
+  integrity sha512-jEJJIV8GHdtkaFFzMJlhCA/eZ4pa5zNN0xK2ZE9wnnSRfuxmtUoFBr1Gd6FirMnx9w05BO0daG5Z+XpWV5fOEA==
 
 chalk@^2.0.0:
   version "2.4.2"
@@ -1663,10 +1659,6 @@ find-up@^4.1.0:
     locate-path "^5.0.0"
     path-exists "^4.0.0"
 
-"flow-protocol-ethereum@github:laminar-protocol/flow-protocol-ethereum#0.0.2":
-  version "0.0.2"
-  resolved "https://codeload.github.com/laminar-protocol/flow-protocol-ethereum/tar.gz/583891bdebc18928a78ae3e903dd1e371300afbe"
-
 follow-redirects@1.5.10:
   version "1.5.10"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.10.tgz#7b7a9f9aea2fdff36786a94ff643ed07f4ff5e2a"
@@ -2136,12 +2128,12 @@ keyv@^3.0.0:
 laminar-oracle-dispatcher@./servers/packages/laminar-oracle-dispatcher/:
   version "0.1.0"
   dependencies:
-    "@laminar/api" "^0.2.0-beta.37"
-    "@orml/api" "^0.2.0-beta.68"
-    "@orml/app-util" "^0.2.0-beta.68"
-    "@orml/dispatcher" "^0.2.0-beta.68"
-    "@orml/fetcher" "^0.2.0-beta.68"
-    "@orml/util" "^0.2.0-beta.68"
+    "@laminar/api" "^0.2.0-beta.73"
+    "@open-web3/api" "^0.3.0-beta.5"
+    "@open-web3/app-util" "^0.3.0-beta.5"
+    "@open-web3/dispatcher" "^0.3.0-beta.5"
+    "@open-web3/fetcher" "^0.3.0-beta.5"
+    "@open-web3/util" "^0.3.0-beta.5"
     "@types/express" "^4.17.4"
     dotenv "^8.2.0"
     express "^4.17.1"
@@ -2776,7 +2768,7 @@ rlp@^2.2.3:
   dependencies:
     bn.js "^4.11.1"
 
-rxjs@^6.5.4:
+rxjs@^6.5.4, rxjs@^6.5.5:
   version "6.5.5"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.5.5.tgz#c5c884e3094c8cfee31bf27eb87e54ccfc87f9ec"
   integrity sha512-WfQI+1gohdf0Dai/Bbmk5L5ItH5tYqm3ki2c5GdWhKjalzjg93N3avFjVStyZZz+A2Em+ZxKH5bNghw9UeylGQ==
